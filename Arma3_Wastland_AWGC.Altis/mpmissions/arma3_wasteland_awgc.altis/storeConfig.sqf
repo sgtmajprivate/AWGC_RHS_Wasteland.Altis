@@ -87,7 +87,19 @@ rifleArray = compileFinal str
 	["AKM Rifle", "arifle_AKM_F", 2000],
 	["AK-12 Rifle", "arifle_AK12_F", 2500],
 	["AK-12 GL Rifle", "arifle_AK12_GL_F", 3000],
+	
+	// RHS USAF
+	["RHS MK 11", "rhs_weap_sr25", 5500],		// RHS
+	["RHS M24", "rhs_weap_m24sws", 4500],		// RHS
+	["RHS M14 EBR", "rhs_weap_m14ebrri", 5000],		// RHS
+	["RHS M107", "rhs_weap_M107", 10000],		// RHS
+	["RHS M32 Launcher", "rhs_weap_m32", 10000],		// RHS
+	["RHS M4", "rhs_weap_m4", 2500],		// RHS
+	["RHS MK 18", "rhs_weap_mk18_bk", 2500],		// RHS
+	["RHS M4A1 Rail", "rhs_weap_m4a1_blockII_bk", 3000],		// RHS
+	
 
+	
 	// Marksman Rifles
 	["MXM Rifle", "arifle_MXM_F", 3000],
 	["MXM Rifle (Black)", "arifle_MXM_Black_F", 3000],
@@ -242,6 +254,7 @@ ammoArray = compileFinal str
 	["5.45mm 30Rnd Tracer (Yellow) Mag", "30Rnd_545x39_Mag_Tracer_F", 15],
 	["5.45mm 30Rnd Tracer (Green) Mag", "30Rnd_545x39_Mag_Tracer_Green_F", 15],
 	["5.56mm 20Rnd Underwater Mag", "20Rnd_556x45_UW_mag", 10],
+	["5.56mm 30Rnd STANAG Mag", "rhs_mag_30Rnd_556x45_M855_Stanag", 20],		// RHS
 	["5.56mm 30Rnd STANAG Mag", "30Rnd_556x45_Stanag", 20],
 	["5.56mm 30Rnd Tracer (Green) Mag", "30Rnd_556x45_Stanag_Tracer_Green", 15],
 	["5.56mm 30Rnd Tracer (Yellow) Mag", "30Rnd_556x45_Stanag_Tracer_Yellow", 15],
@@ -265,7 +278,9 @@ ammoArray = compileFinal str
 	["6.5mm 200Rnd Belt Case", "200Rnd_65x39_cased_Box", 150],
 	["6.5mm 200Rnd Tracer (Yellow) Belt Case", "200Rnd_65x39_cased_Box_Tracer", 125],
 	//["7.62mm 10Rnd Mag", "10Rnd_762x51_Mag", 15],
+	["7.62mm 5Rnd Mag", "rhsusf_5Rnd_762x51_m118_special_Mag", 10],		// RHS
 	["7.62mm 10Rnd Mag", "10Rnd_762x54_Mag", 15],
+	["7.62mm 20Rnd Mag", "rhsusf_20Rnd_762x51_m118_special_Mag", 25],		// RHS
 	["7.62mm 20Rnd Mag", "20Rnd_762x51_Mag", 25],
 	["7.62mm 30Rnd Mag", "30Rnd_762x39_Mag_F", 20],
 	["7.62mm 30Rnd Tracer (Yellow) Mag", "30Rnd_762x39_Mag_Tracer_F", 15],
@@ -282,6 +297,7 @@ ammoArray = compileFinal str
 	["12.7mm 5Rnd Mag", "5Rnd_127x108_Mag", 50],
 	["12.7mm 5Rnd Armor-Piercing Mag", "5Rnd_127x108_APDS_Mag", 60],
 	["12.7mm 10Rnd Subsonic Mag", "10Rnd_127x54_Mag", 75],
+	["50BMG 10Rnd Mag", "rhsusf_mag_10Rnd_STD_50BMG_M33", 20],		// RHS
 	[".50 BW 10Rnd Mag", "10Rnd_50BW_Mag_F", 50],
 	["PG-7VM HEAT Grenade", "RPG7_F", 2000],                   // Direct damage: medium    | Splash damage: low    | Guidance: none
 	["RPG-42 Anti-Tank Rocket", "RPG32_F", 2500],              // Direct damage: high      | Splash damage: low    | Guidance: none
@@ -290,6 +306,7 @@ ammoArray = compileFinal str
 	["Titan Anti-Tank Missile", "Titan_AT", 3500],             // Direct damage: high      | Splash damage: low    | Guidance: mouse, laser, ground vehicles
 	["Titan Anti-Personnel Missile", "Titan_AP", 3500],        // Direct damage: low       | Splash damage: high   | Guidance: mouse, laser
 	["Titan Anti-Air Missile", "Titan_AA", 3500],              // Direct damage: low       | Splash damage: medium | Guidance: aircraft
+	["M441 HE", "rhsusf_mag_6Rnd_M441_HE", 500],		// RHS
 	["40mm HE Grenade Round", "1Rnd_HE_Grenade_shell", 125],
 	["40mm 3Rnd HE Grenades", "3Rnd_HE_Grenade_shell", 250],
 	["40mm Smoke Round (White)", "1Rnd_Smoke_Grenade_shell", 50],
@@ -347,6 +364,7 @@ accessoriesArray = compileFinal str
 	["Suppressor .338 (Sand)", "muzzle_snds_338_sand", 1750, "item"],
 	["Suppressor 9.3mm", "muzzle_snds_93mmg", 1750, "item"],
 	["Suppressor 9.3mm (Tan)", "muzzle_snds_93mmg_tan", 1750, "item"],
+	["SR-15 Suppressor", "rhsusf_acc_SR25S", 2000, "item"],		// RHS
 	["Bipod (NATO)", "bipod_01_F_blk", 100, "item", "noDLC"],
 	["Bipod (CSAT)", "bipod_02_F_blk", 100, "item", "noDLC"],
 	["Bipod (AAF)", "bipod_03_F_blk", 100, "item", "noDLC"],
@@ -367,6 +385,7 @@ accessoriesArray = compileFinal str
 	["ACO (Green)", "optic_Aco_grn", 75, "item"],
 	["Holosight SMG", "optic_Holosight_smg", 50, "item"],
 	["Holosight", "optic_Holosight", 75, "item"],
+	["ACOG", "rhsusf_acc_ACOG_USMC", 100, "item"],		// RHS
 	["MRCO", "optic_MRCO", 100, "item"],
 	["ERCO", "optic_ERCO_blk_F", 100, "item"],
 	["ERCO (Khaki)", "optic_ERCO_khk_F", 100, "item"],
@@ -390,6 +409,7 @@ accessoriesArray = compileFinal str
 	["LRPS", "optic_LRPS", 3000, "item"],
 	["LRPS (G Hex)", "optic_LRPS_ghex_F", 3000, "item", "noDLC"],
 	["LRPS (Tropic)", "optic_LRPS_tna_F", 3000, "item", "noDLC"],
+	["M8541A", "rhsusf_acc_premier_low", 3500, "item"],		// RHS
 	["NVS", "optic_NVS", 5000, "item"],
 	["TWS", "optic_tws", 50000, "item", "HIDDEN"], // To hide from store list, add "HIDDEN" after "item", like "item", "HIDDEN"]
 	["TWS MG", "optic_tws_mg", 60000, "item", "HIDDEN"],
@@ -938,7 +958,10 @@ armoredArray = compileFinal str
 	["Qilin", "O_T_LSV_02_unarmed_F", 2000, "vehicle", "SKIPSAVE"],
 	["Qilin Minigun", "O_T_LSV_02_armed_F", 6000, "vehicle", "SKIPSAVE"],
 
+	["HUMVEE", "rhsusf_m1025_w", 30000, "vehicle"],		// RHS
 	["Hunter", "B_MRAP_01_F", 40000, "vehicle", "SKIPSAVE"],
+	["HUMVEE HMG", "rhsusf_m1025_w_m2", 100000, "vehicle"],		// RHS
+	["HUMVEE GMG", "rhsusf_m1025_w_mk19", 150000, "vehicle"],		// RHS
 	["Hunter HMG", "B_MRAP_01_hmg_F", 150000, "vehicle"],
 	["Hunter GMG", "B_MRAP_01_gmg_F", 175000, "vehicle"],
 	["Ifrit", "O_MRAP_02_F", 40000, "vehicle", "SKIPSAVE"],
@@ -957,9 +980,11 @@ tanksArray = compileFinal str
 	["CRV-6e Bobcat (Resupply)", "B_APC_Tracked_01_CRV_F", 325000, "vehicle"],
 	["IFV-6c Panther", "B_APC_Tracked_01_rcws_F", 350000, "vehicle"],
 	["FV-720 Mora", "I_APC_tracked_03_cannon_F", 375000, "vehicle"],
+	["RHS M2A2", "RHS_M2A2", 375000, "vehicle"],		// RHS
 	["BTR-K Kamysh", "O_APC_Tracked_02_cannon_F", 400000, "vehicle"],
 	["IFV-6a Cheetah AA", "B_APC_Tracked_01_AA_F", 400000, "vehicle"],
 	["ZSU-39 Tigris AA", "O_APC_Tracked_02_AA_F", 400000, "vehicle"],
+	["RHS M1A1", "rhsusf_m1a1aimwd_usarmy", 500000, "vehicle"],		// RHS
 	["M2A1 Slammer", "B_MBT_01_cannon_F", 500000, "vehicle"],
 	["M2A4 Slammer HMG", "B_MBT_01_TUSK_F", 500000, "vehicle"], // Commander gun variant
 	["T-100 Varsuk", "O_MBT_02_cannon_F", 500000, "vehicle"],
@@ -972,6 +997,7 @@ helicoptersArray = compileFinal str
 
 	["M-900 Civilian", "C_Heli_Light_01_civil_F", 4000, "vehicle"], // MH-6, no flares
 	["MH-9 Hummingbird", "B_Heli_Light_01_F", 5000, "vehicle"], // MH-6
+	["RHS MH-6M", "RHS_MELB_MH6M", 5000, "vehicle"],		// RHS
 	["PO-30 Orca (Unarmed)", "O_Heli_Light_02_unarmed_F", 6000, "vehicle"], // Ka-60
 	["WY-55 Hellcat (Unarmed)", "I_Heli_light_03_unarmed_F", 7000, "vehicle"], // AW159
 	["CH-49 Mohawk", "I_Heli_Transport_02_F", 8000, "vehicle"], // AW101
@@ -988,14 +1014,17 @@ helicoptersArray = compileFinal str
 	["CH-67 Huron (Unarmed)", "B_Heli_Transport_03_unarmed_F", 10000, "vehicle"], // CH-47
 	["CH-67 Huron (Armed)", "B_Heli_Transport_03_F", 200000, "vehicle"], // CH-47 with 2 side miniguns
 
-	["UH-80 Ghost Hawk", "B_Heli_Transport_01_F", 125000, "vehicle"], // UH-60 Stealth with 2 side miniguns
+	["RHS UH-60 Black Hawk Armed", "RHS_UH60M", 100000, "vehicle"],		// RHS
+	["RHS UH-80 Ghost Hawk", "B_Heli_Transport_01_F", 125000, "vehicle"], // UH-60 Stealth with 2 side miniguns
 	["AH-9 Pawnee (Gun-Only)", "B_Heli_Light_01_dynamicLoadout_F", 150000, "vehicle", "variant_pawneeGun"], // Armed AH-6 (no missiles)
 	["AH-9 Pawnee", "B_Heli_Light_01_dynamicLoadout_F", 350000, "vehicle", "variant_pawneeNormal"], // Armed AH-6
+	["RHS AH-6M LittleBird", "RHS_MELB_AH6M", 350000, "vehicle"],		// RHS
 	["PO-30 Orca (DAR)", "O_Heli_Light_02_dynamicLoadout_F", 300000, "vehicle", "variant_orcaDAR"], // Armed Ka-60
 	["PO-30 Orca (DAGR)", "O_Heli_Light_02_dynamicLoadout_F", 400000, "vehicle", "variant_orcaDAGR"], // Armed Ka-60, add "HIDDEN" if you don't want it, but don't remove the line!
 	["WY-55 Hellcat (Armed)", "I_Heli_light_03_dynamicLoadout_F", 400000, "vehicle"], // Armed AW159
 	["AH-99 Blackfoot", "B_Heli_Attack_01_dynamicLoadout_F", 500000, "vehicle"], // RAH-66 with gunner
 	["Mi-48 Kajman", "O_Heli_Attack_02_dynamicLoadout_F", 600000, "vehicle"], // Mi-28 with gunner 
+	["AH64D Apache", "RHS_AH64D", 600000, "vehicle"],		// RHS
 
 	["MQ-12 Falcon UAV", "B_T_UAV_03_F", 500000, "vehicle"] // Do NOT use "B_T_UAV_03_dynamicLoadout_F" (doesn't support ASRAAM pylons)
 ];
