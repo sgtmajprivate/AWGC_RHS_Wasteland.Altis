@@ -35,7 +35,7 @@ _setupObjects =
 	_aiGroup = createGroup CIVILIAN;
 	[_aiGroup, _missionPos, _nbUnits] call createCustomGroup;
 
-	_missionHintText = "A weapon cache has been spotted near the marker.";
+	_missionHintText = Format ["A weapon cache <t color='%1'>is ACTIVE</t> go seize the weapons.",]
 };
 
 _waitUntilMarkerPos = nil;

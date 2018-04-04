@@ -8,15 +8,15 @@ class EditorData
 	toggles=69;
 	class ItemIDProvider
 	{
-		nextID=812;
+		nextID=814;
 	};
 	class MarkerIDProvider
 	{
-		nextID=201;
+		nextID=202;
 	};
 	class LayerIndexProvider
 	{
-		nextID=24;
+		nextID=26;
 	};
 	class Camera
 	{
@@ -5446,7 +5446,7 @@ class Mission
 					name="Parking6_spawn";
 					type="Empty";
 					colorName="ColorBlack";
-					angle=215.59111;
+					angle=215.59109;
 					id=427;
 				};
 				class Item12
@@ -5725,20 +5725,19 @@ class Mission
 		class Item238
 		{
 			dataType="Marker";
-			position[]={14896.869,17.909986,16732.789};
+			position[]={14896.869,17.91,16732.789};
 			name="FOB Jello";
-			text=" FOB Jello";
+			text="FOB Campbell";
 			type="b_hq";
 			colorName="ColorBLUFOR";
-			angle=2.9453261;
+			angle=2.9449999;
 			id=452;
-			atlOffset=-1.335144e-005;
 		};
 		class Item239
 		{
 			dataType="Trigger";
 			position[]={14792.447,17.909986,16720.545};
-			angle=0.81777549;
+			angle=0.81777543;
 			class Attributes
 			{
 				onActivation="gate2 animate [""door_1_rot"",1];";

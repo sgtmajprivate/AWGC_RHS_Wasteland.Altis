@@ -596,13 +596,13 @@ player createDiaryRecord ["infos",
 <br/>FAQ:
 <br/>
 <br/>Q. Where are the mission markers?
-<br/>A. Missions markers are hidden in this server. That does not mean there are no active missions, at any given time there will be at least 5 active missions. What for the hints that pop up, they include intel on where to find the mission.
+<br/>A. Missions markers are hidden in this server. That does not mean there are no active missions, at any given time there will be at least 5 active missions. Wait for the hints to pop up, they include intel on where to find the mission.
 <br/>
 <br/>Q. Why can't I see other team players on the map?
 <br/>A. By default, you do not spawn with a GPS. A GPS is required to see other teamates. They can easily be looted or purchase at the GS, General Store. Again this feature is for added realism, and it makes players use thier navigation skills. A lost art in ARMA...
 <br/>
 <br/>Q. What is the Large Red Circle on the map?
-<br/>A. The Large Red circle is the PVP area! Players can go here to VS other players who are also looking to PVP. Territory yiald HIGH CASH VALUE! Note, that PVP is not limited to just this circle, you can be attacked by another player anywhere on the map, so stay frosty soldier!
+<br/>A. The Large Red circle is the PVP area! Players can go here to VS other players who are also looking to PVP. Territory capture yields HIGH CASH VALUE! Note, that PVP is not limited to just this circle, you can be attacked by another player anywhere on the map, so stay frosty soldier!
 <br/>
 <br/>Q. What are the blue circles on the map?
 <br/>A. The circles represent town limits. If friendly soldiers are in a town, you can spawn there from the re-spawn menu; however if there is an enemy presence, you will not be able to spawn there.
