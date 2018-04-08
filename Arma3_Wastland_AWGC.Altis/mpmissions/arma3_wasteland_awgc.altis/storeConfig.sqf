@@ -93,6 +93,7 @@ rifleArray = compileFinal str
 	["RHS M24", "rhs_weap_m24sws", 4500],		// RHS
 	["RHS M14 EBR", "rhs_weap_m14ebrri", 5000],		// RHS
 	["RHS M107", "rhs_weap_M107", 10000],		// RHS
+	["RHS M210", "rhs_weap_XM2010", 10000],		// RHS
 	["RHS M32 Launcher", "rhs_weap_m32", 10000],		// RHS
 	["RHS M4", "rhs_weap_m4", 2500],		// RHS
 	["RHS MK 18", "rhs_weap_mk18_bk", 2500],		// RHS
@@ -297,6 +298,7 @@ ammoArray = compileFinal str
 	["12.7mm 5Rnd Mag", "5Rnd_127x108_Mag", 50],
 	["12.7mm 5Rnd Armor-Piercing Mag", "5Rnd_127x108_APDS_Mag", 60],
 	["12.7mm 10Rnd Subsonic Mag", "10Rnd_127x54_Mag", 75],
+	["300 WinMag 5Rnd Mag", "rhsusf_5Rnd_300winmag_xm2010", 20],		// RHS
 	["50BMG 10Rnd Mag", "rhsusf_mag_10Rnd_STD_50BMG_M33", 20],		// RHS
 	[".50 BW 10Rnd Mag", "10Rnd_50BW_Mag_F", 50],
 	["PG-7VM HEAT Grenade", "RPG7_F", 2000],                   // Direct damage: medium    | Splash damage: low    | Guidance: none
@@ -341,6 +343,7 @@ accessoriesArray = compileFinal str
 [
 	["Suppressor 9mm", "muzzle_snds_L", 500, "item"],
 	["Suppressor .45 ACP", "muzzle_snds_acp", 750, "item"],
+	["RHS Suppressor 5.56mm", "rhsusf_acc_nt4_black", 1000, "item"],
 	["Suppressor 5.56mm", "muzzle_snds_M", 1000, "item"],
 	["Suppressor 5.56mm (Khaki)", "muzzle_snds_m_khk_F", 1000, "item", "noDLC"],
 	["Suppressor 5.56mm (Sand)", "muzzle_snds_m_snd_F", 1000, "item", "noDLC"],
@@ -385,6 +388,7 @@ accessoriesArray = compileFinal str
 	["ACO (Green)", "optic_Aco_grn", 75, "item"],
 	["Holosight SMG", "optic_Holosight_smg", 50, "item"],
 	["Holosight", "optic_Holosight", 75, "item"],
+	["eoTech XPS", "rhsusf_acc_eotech_xps3", 75, "item"],		// RHS
 	["ACOG", "rhsusf_acc_ACOG_USMC", 100, "item"],		// RHS
 	["MRCO", "optic_MRCO", 100, "item"],
 	["ERCO", "optic_ERCO_blk_F", 100, "item"],
@@ -410,7 +414,11 @@ accessoriesArray = compileFinal str
 	["LRPS (G Hex)", "optic_LRPS_ghex_F", 3000, "item", "noDLC"],
 	["LRPS (Tropic)", "optic_LRPS_tna_F", 3000, "item", "noDLC"],
 	["M8541A", "rhsusf_acc_premier_low", 3500, "item"],		// RHS
+	["LeupoldMK4 10x", "rhsusf_acc_LEUPOLDMK4", 3500, "item"],		// RHS
+	["LeupoldMK4 20x", "rhsusf_acc_LEUPOLDMK4_2", 4000, "item"],		// RHS
+	["ACOG NVS", "rhsusf_acc_ACOG_anpvs27", 4500, "item"],		// RHS
 	["NVS", "optic_NVS", 5000, "item"],
+	["LeupoldMK4 10x NVS", "rhsusf_acc_premier_anpvs27", 7000, "item"],		// RHS
 	["TWS", "optic_tws", 50000, "item", "HIDDEN"], // To hide from store list, add "HIDDEN" after "item", like "item", "HIDDEN"]
 	["TWS MG", "optic_tws_mg", 60000, "item", "HIDDEN"],
 	["Nightstalker", "optic_Nightstalker", 75000, "item", "HIDDEN"]
@@ -423,6 +431,9 @@ headArray = compileFinal str
 	// ["MICH (Camo)", "H_HelmetIA_net", 50, "hat"],
 	// ["MICH 2 (Camo)", "H_HelmetIA_camo", 50, "hat"],
 	["Combat Helmet", "H_HelmetB", 50, "hat"],
+	["RHS MICH", "rhsusf_mich_bare", 50, "hat"],		// RHS
+	["RHS MICH Semi", "rhsusf_mich_bare_semi", 50, "hat"],		// RHS
+	["RHS MICH Tan", "rhsusf_mich_bare_tan", 50, "hat"],		// RHS
 	["Combat Helmet (Black)", "H_HelmetB_black", 50, "hat"],
 	["Combat Helmet (Camonet)", "H_HelmetB_camo", 50, "hat"],
 	["Stealth Combat Helmet", "H_HelmetB_TI_tna_F", 75, "hat"],
@@ -430,6 +441,8 @@ headArray = compileFinal str
 	["Enhanced Combat Helmet (Black)", "H_HelmetSpecB_blk", 75, "hat"],
 	["Enhanced Combat Helmet (Snakeskin)", "H_HelmetSpecB_snakeskin", 75, "hat"],
 	["Enhanced Combat Helmet (Tropic)", "H_HelmetB_Enh_tna_F", 75, "hat", "noDLC"],
+	["RHS SpecOps", "rhsusf_opscore_mc", 50, "hat"],		// RHS
+	["RHS SpecOps", "rhsusf_opscore_mc_rg_cover", 50, "hat"],		// RHS
 	["Protector Helmet (Hex)", "H_HelmetO_ocamo", 60, "hat"],
 	["Protector Helmet (Urban)", "H_HelmetO_oucamo", 60, "hat"],
 	["Assassin Helmet (Hex)", "H_HelmetSpecO_ocamo", 75, "hat"],
@@ -437,6 +450,8 @@ headArray = compileFinal str
 	["Defender Helmet (Hex)", "H_HelmetLeaderO_ocamo", 100, "hat"],
 	["Defender Helmet (Urban)", "H_HelmetLeaderO_oucamo", 100, "hat"],
 	["Defender Helmet (G Hex)", "H_HelmetLeaderO_ghex_F", 100, "hat", "noDLC"],
+	["RHS CrewChief", "rhsusf_hgu56_mask_black_skull", 50, "hat"],			// RHS
+	["RHS Pilot", "rhsusf_hgu56_visor_usa", 50, "hat"],			// RHS
 	["Pilot Helmet (NATO)", "H_PilotHelmetFighter_B", 60, "hat"],
 	["Pilot Helmet (CSAT)", "H_PilotHelmetFighter_O", 60, "hat"],
 	["Pilot Helmet (AAF)", "H_PilotHelmetFighter_I", 60, "hat"],
@@ -497,12 +512,12 @@ headArray = compileFinal str
 	["Booniehat (MTP)", "H_Booniehat_mcamo", 10, "hat"],
 	["Booniehat (Olive)", "H_Booniehat_oli", 10, "hat"],
 	["Booniehat (Sand)", "H_Booniehat_tan", 10, "hat"],
-	["Fedora (Blue)", "H_Hat_blue", 10, "hat"],
-	["Fedora (Brown)", "H_Hat_brown", 10, "hat"],
-	["Fedora (Camo)", "H_Hat_camo", 10, "hat"],
-	["Fedora (Checker)", "H_Hat_checker", 10, "hat"],
-	["Fedora (Gray)", "H_Hat_grey", 10, "hat"],
-	["Fedora (Tan)", "H_Hat_tan", 10, "hat"],
+	// ["Fedora (Blue)", "H_Hat_blue", 10, "hat"],
+	// ["Fedora (Brown)", "H_Hat_brown", 10, "hat"],
+	// ["Fedora (Camo)", "H_Hat_camo", 10, "hat"],
+	// ["Fedora (Checker)", "H_Hat_checker", 10, "hat"],
+	// ["Fedora (Gray)", "H_Hat_grey", 10, "hat"],
+	// ["Fedora (Tan)", "H_Hat_tan", 10, "hat"],
 	["Cap (BI)", "H_Cap_grn_BI", 10, "hat"],
 	["Cap (Black)", "H_Cap_blk", 10, "hat"],
 	["Cap (Blue)", "H_Cap_blu", 10, "hat"],
@@ -572,6 +587,11 @@ uniformArray = compileFinal str
 	["Combat Fatigues (Tee)", "U_B_CombatUniform_mcam_tshirt", 25, "uni"],
 	["Combat Fatigues (Gangsta)", "U_I_G_resistanceLeader_F", 25, "uni"],
 	["Combat Fatigues (Rolled-up)", "U_I_CombatUniform_shortsleeve", 25, "uni"],
+	["RHS G3 Uniform Black", "rhs_uniform_g3_blk", 25, "uni"],			// RHS
+	["RHS G3 Uniform M81", "rhs_uniform_g3_m81", 25, "uni"],			// RHS
+	["RHS G3 Uniform Multi", "rhs_uniform_g3_mc", 25, "uni"],			// RHS
+	["RHS G3 Uniform Ranger", "rhs_uniform_g3_rgr", 25, "uni"],			// RHS
+	["RHS G3 Uniform Tan", "rhs_uniform_g3_tan", 25, "uni"],			// RHS
 	["CTRG Combat Uniform", "U_B_CTRG_1", 25, "uni"],
 	["CTRG Combat Uniform (Tee)", "U_B_CTRG_2", 25, "uni"],
 	["CTRG Combat Uniform (Rolled-up)", "U_B_CTRG_3", 25, "uni"],
@@ -718,6 +738,10 @@ backpackArray = compileFinal str
 	["Viper Harness (G Hex)", "B_ViperHarness_ghex_F", 4250, "backpack", "noDLC"],
 	["Viper Harness (Khaki)", "B_ViperHarness_khk_F", 4250, "backpack", "noDLC"],
 	["Viper Harness (Olive)", "B_ViperHarness_oli_F", 4250, "backpack", "noDLC"],
+	
+	["RHS Eagle Coyote", "rhsusf_assault_eagleaiii_coy", 5000, "backpack"],
+	["RHS Eagle Multi", "rhsusf_assault_eagleaiii_ocp", 5000, "backpack"],
+	["RHS Eagle Digi", "rhsusf_assault_eagleaiii_ucp", 5000, "backpack"],
 
 	["Carryall (Khaki)", "B_Carryall_khk", 5000, "backpack"],
 	["Carryall (MTP)", "B_Carryall_mcamo", 5000, "backpack"],
@@ -835,6 +859,7 @@ genObjectsArray = compileFinal str
 	["Car Port", "Land_Shed_Small_F", 200000, "object"],   //add
 	["Pier Ladder", "Land_PierLadder_F", 2500, "object"],
 	["Ammo Cache", "Box_FIA_Support_F", 2500, "ammocrate"],
+	["Taru Cargo Pod", "Land_Pod_Heli_Transport_04_Box_F", 7500, "object"],		// RHS
 	["Metal Barrel", "Land_MetalBarrel_F", 25, "object"],
 	["Toilet Box", "Land_ToiletBox_F", 25, "object"],
 	["Runway Lamp", "Land_runway_edgelight", 500, "object"],  //add
@@ -847,6 +872,8 @@ genObjectsArray = compileFinal str
 	["Concrete Barrier", "Land_CncBarrier_F", 2000, "object"],
 	["Concrete Barrier (Medium)", "Land_CncBarrierMedium_F", 3500, "object"],
 	["Concrete Barrier (Long)", "Land_CncBarrierMedium4_F", 5000, "object"],
+	["Sandbag Corner", "land_bagfence_corner_F", 500, "object"],		// RHS
+	["Sandbag Long", "land_bagfence_long_F", 750, "object"],		// RHS
 	["HBarrier (1 block)", "Land_HBarrier_1_F", 1500, "object"],
 	["HBarrier (3 blocks)", "Land_HBarrier_3_F", 2000, "object"],
 	["HBarrier (5 blocks)", "Land_HBarrier_5_F", 2500, "object"],
@@ -874,6 +901,7 @@ genObjectsArray = compileFinal str
 	["Military Cargo Tower", "Land_Cargo_Tower_V1_F", 100000, "object"],
 	["Concrete Ramp", "Land_RampConcrete_F", 3500, "object"],
 	["Concrete Ramp (High)", "Land_RampConcreteHigh_F", 5000, "object"],
+	["Concrete Stairs", "land_gh_stairs_f", 750, "object"],		// RHS
 	["Scaffolding", "Land_Scaffolding_F", 2500, "object"]
 ];
 
@@ -970,6 +998,7 @@ armoredArray = compileFinal str
 	["Strider", "I_MRAP_03_F", 40000, "vehicle", "SKIPSAVE"],
 	["Strider HMG", "I_MRAP_03_hmg_F", 150000, "vehicle"],
 	["Strider GMG", "I_MRAP_03_gmg_F", 175000, "vehicle"],
+	["Caiman with M153", "rhsusf_M1220_M153_M2_usarmy_d", 175000, "vehicle"],
 	["MSE-3 Marid", "O_APC_Wheeled_02_rcws_F", 225000, "vehicle"],
 	["AMV-7 Marshall", "B_APC_Wheeled_01_cannon_F", 275000, "vehicle"],
 	["AFV-4 Gorgon", "I_APC_Wheeled_03_cannon_F", 300000, "vehicle"]
@@ -1018,11 +1047,12 @@ helicoptersArray = compileFinal str
 	["RHS UH-80 Ghost Hawk", "B_Heli_Transport_01_F", 125000, "vehicle"], // UH-60 Stealth with 2 side miniguns
 	["AH-9 Pawnee (Gun-Only)", "B_Heli_Light_01_dynamicLoadout_F", 150000, "vehicle", "variant_pawneeGun"], // Armed AH-6 (no missiles)
 	["AH-9 Pawnee", "B_Heli_Light_01_dynamicLoadout_F", 350000, "vehicle", "variant_pawneeNormal"], // Armed AH-6
-	["RHS AH-6M LittleBird", "RHS_MELB_AH6M", 350000, "vehicle"],		// RHS
+	["RHS AH-6M LittleBird", "RHS_MELB_AH6M", 150000, "vehicle"],		// RHS
 	["PO-30 Orca (DAR)", "O_Heli_Light_02_dynamicLoadout_F", 300000, "vehicle", "variant_orcaDAR"], // Armed Ka-60
 	["PO-30 Orca (DAGR)", "O_Heli_Light_02_dynamicLoadout_F", 400000, "vehicle", "variant_orcaDAGR"], // Armed Ka-60, add "HIDDEN" if you don't want it, but don't remove the line!
 	["WY-55 Hellcat (Armed)", "I_Heli_light_03_dynamicLoadout_F", 400000, "vehicle"], // Armed AW159
 	["AH-99 Blackfoot", "B_Heli_Attack_01_dynamicLoadout_F", 500000, "vehicle"], // RAH-66 with gunner
+	["UH-1Y Venom", "RHS_UH1Y", 500000, "vehicle"], 		// RHS
 	["Mi-48 Kajman", "O_Heli_Attack_02_dynamicLoadout_F", 600000, "vehicle"], // Mi-28 with gunner 
 	["AH64D Apache", "RHS_AH64D", 600000, "vehicle"],		// RHS
 
@@ -1044,12 +1074,15 @@ planesArray = compileFinal str
 	["To-201 Shikra (Gun-Only)", "O_Plane_Fighter_02_Stealth_F", 250000, "vehicle"], // no missiles or bombs
 	["To-201 Shikra", "O_Plane_Fighter_02_F", 750000, "vehicle"],
 
+	["A-10 ThunderBolt", "RHS_A10", 700000, "vehicle"],			// RHS
 	["A-164 Wipeout CAS", "B_Plane_CAS_01_dynamicLoadout_F", 750000, "vehicle"],
 	["To-199 Neophron CAS", "O_Plane_CAS_02_dynamicLoadout_F", 750000, "vehicle"],
 
 	["V-44 X Blackfish (Infantry)", "B_T_VTOL_01_infantry_F", 10000, "vehicle"],
 	["V-44 X Blackfish (Gunship)", "B_T_VTOL_01_armed_F", 600000, "vehicle"],
-	["Y-32 Xi'an", "O_T_VTOL_02_infantry_dynamicLoadout_F", 600000, "vehicle"],
+	// ["Y-32 Xi'an", "O_T_VTOL_02_infantry_dynamicLoadout_F", 600000, "vehicle"],
+	["C-130 Hercules", "RHS_C130J", 10000, "vehicle"],
+	
 
 	["KH-3A Fenghuang Missile UAV", "O_T_UAV_04_CAS_F", 300000, "vehicle"],
 
