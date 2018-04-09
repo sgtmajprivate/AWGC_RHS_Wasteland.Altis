@@ -132,9 +132,9 @@ A3W_buildingLootChances = 25;      // Chance percentage that loot will spawn at 
 A3W_vehicleLoot = 2;               // Level of loot added to vehicles (0 = none, 1 = weapon OR items, 2 = weapon AND items, 3 = two weapons AND items) - 2 or 3 recommended if buildingLoot = 0
 
 // Territory settings
-A3W_territoryCaptureTime = 3*60;   // Time in seconds needed to capture a territory
+A3W_territoryCaptureTime = 1*60;   // Time in seconds needed to capture a territory
 A3W_territoryPayroll = 1;          // Periodically reward sides and indie groups based on how many territories they own (0 = no, 1 = yes)
-A3W_payrollInterval = 30*60;       // Delay in seconds between each payroll
+A3W_payrollInterval = 15*60;       // Delay in seconds between each payroll
 A3W_payrollAmount = 10000;         // Amount of money rewarded per territory on each payroll
 
 // Mission settings
@@ -143,10 +143,10 @@ A3W_missionsDifficulty = 1;        // Missions difficulty (0 = normal, 1 = hard)
 A3W_missionFarAiDrawLines = 1;     // Draw small red lines on the map from mission markers to individual units & vehicles which are further away than 75m from the objective (0 = no, 1 = yes)
 A3W_missionsQuantity = 6;          // Number of missions running at the same time (0 to 6)
 A3W_heliPatrolMissions = 1;        // Enable missions involving flying helicopters piloted by AI (0 = no, 1 = yes)
-A3W_underWaterMissions = 1;        // Enable underwater missions which require diving gear (0 = no, 1 = yes)
+A3W_underWaterMissions = 0;        // Enable underwater missions which require diving gear (0 = no, 1 = yes)
 A3W_mainMissionDelay = 10*60;      // Time in seconds between Main Missions
-A3W_mainMissionTimeout = 60*60;    // Time in seconds that a Main Mission will run for, unless completed
+A3W_mainMissionTimeout = 120*60;    // Time in seconds that a Main Mission will run for, unless completed
 A3W_sideMissionDelay = 5*60;       // Time in seconds between Side Missions
-A3W_sideMissionTimeout = 45*60;    // Time in seconds that a Side Mission will run for, unless completed
-A3W_moneyMissionDelay = 15*60;     // Time in seconds between Money Missions
-A3W_moneyMissionTimeout = 60*60;   // Time in seconds that a Money Mission will run for, unless completed
+A3W_sideMissionTimeout = 60*60;    // Time in seconds that a Side Mission will run for, unless completed
+A3W_moneyMissionDelay = 10*60;     // Time in seconds between Money Missions
+A3W_moneyMissionTimeout = 120*60;   // Time in seconds that a Money Mission will run for, unless completed

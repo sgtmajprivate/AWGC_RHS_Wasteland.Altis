@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=26;
+		nextID=28;
 	};
 	class Camera
 	{
@@ -29,6 +29,7 @@ class EditorData
 binarizationWanted=0;
 addons[]=
 {
+	"rhsusf_c_weapons",
 	"A3_Characters_F",
 	"A3_Ui_F",
 	"A3_Structures_F_Households_House_Big01",
@@ -5446,7 +5447,7 @@ class Mission
 					name="Parking6_spawn";
 					type="Empty";
 					colorName="ColorBlack";
-					angle=215.59109;
+					angle=215.59108;
 					id=427;
 				};
 				class Item12

@@ -89,6 +89,7 @@ rifleArray = compileFinal str
 	["AK-12 GL Rifle", "arifle_AK12_GL_F", 3000],
 	
 	// RHS USAF
+	["MossBerg M590", "rhs_weap_M590_8RD", 2500],		// RHS
 	["RHS MK 11", "rhs_weap_sr25", 5500],		// RHS
 	["RHS M24", "rhs_weap_m24sws", 4500],		// RHS
 	["RHS M14 EBR", "rhs_weap_m14ebrri", 5000],		// RHS
@@ -242,6 +243,7 @@ throwputArray = compileFinal str
 //Text name, classname, buy cost
 ammoArray = compileFinal str
 [
+	["12GA 00BuckShot 8Rnd", "rhsusf_8Rnd_00Buck", 20],		// RHS
 	["9mm 10Rnd Mag", "10Rnd_9x21_Mag", 5],
 	["9mm 16Rnd Mag", "16Rnd_9x21_Mag", 10],
 	["9mm 30Rnd Mag", "30Rnd_9x21_Mag", 15],
@@ -727,11 +729,11 @@ backpackArray = compileFinal str
 	["Kitbag (MTP)", "B_Kitbag_mcamo", 350, "backpack"],
 	["Kitbag (Sage)", "B_Kitbag_sgg", 350, "backpack"],
 
-	["Viper Light Harness (Black)", "B_ViperLightHarness_blk_F", 3500, "backpack", "noDLC"],
-	["Viper Light Harness (Hex)", "B_ViperLightHarness_hex_F", 3500, "backpack", "noDLC"],
-	["Viper Light Harness (G Hex)", "B_ViperLightHarness_ghex_F", 3500, "backpack", "noDLC"],
-	["Viper Light Harness (Khaki)", "B_ViperLightHarness_khk_F", 3500, "backpack", "noDLC"],
-	["Viper Light Harness (Olive)", "B_ViperLightHarness_oli_F", 3500, "backpack", "noDLC"],
+	// ["Viper Light Harness (Black)", "B_ViperLightHarness_blk_F", 3500, "backpack", "noDLC"],
+	// ["Viper Light Harness (Hex)", "B_ViperLightHarness_hex_F", 3500, "backpack", "noDLC"],
+	// ["Viper Light Harness (G Hex)", "B_ViperLightHarness_ghex_F", 3500, "backpack", "noDLC"],
+	// ["Viper Light Harness (Khaki)", "B_ViperLightHarness_khk_F", 3500, "backpack", "noDLC"],
+	// ["Viper Light Harness (Olive)", "B_ViperLightHarness_oli_F", 3500, "backpack", "noDLC"],
 
 	["Viper Harness (Black)", "B_ViperHarness_blk_F", 4250, "backpack", "noDLC"],
 	["Viper Harness (Hex)", "B_ViperHarness_hex_F", 4250, "backpack", "noDLC"],
@@ -850,6 +852,7 @@ allStoreGear = compileFinal str (call headArray + call uniformArray + call vestA
 
 genObjectsArray = compileFinal str
 [
+	["SATCOM Console", "Land_SatellitePhone_F", 10000, "object"],
 	["Base Locker", "Land_Device_assembled_F", 1000000, "object"],
 	["Camo Net", "CamoNet_INDP_open_F", 200, "object", "HIDDEN"], // unlisted, only for object saving
 	["Cargo House", "Land_Cargo_House_V1_F", 100000, "object"],  //add

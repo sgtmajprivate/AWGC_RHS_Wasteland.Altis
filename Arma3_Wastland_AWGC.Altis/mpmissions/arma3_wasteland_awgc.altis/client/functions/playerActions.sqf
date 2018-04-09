@@ -26,6 +26,8 @@ if (["A3W_vehicleLocking"] call isConfigOn) then
 	["<t color='#FFE496'><img image='client\icons\gunner.paa'/> Mark your stuff on the map</t>", "addons\scripts\markOwned.sqf", [], -95,false,false,"","{_x in ['ItemGPS','B_UavTerminal','O_UavTerminal','I_UavTerminal']} count assignedItems player > 0"],
 	
 	["<t color='#FFE496'><img image='client\icons\r3f_lock.paa'/> Open Base Menu</t>", "addons\BoS\BoS_selectMenu.sqf", [cursorTarget], -97, false, false, "", "(alive cursorTarget) and (vehicle player == player) and (cursortarget iskindof 'Land_Device_assembled_F') and (player distance cursortarget) < 5"],	
+// SATCOM	
+	["<t color='#FFE496'><img image='client\icons\satellite.paa'/> SATCOM</t>", "pxs_satcom_a3\start_satellite.sqf", [cursorTarget], -97, false, false, "", "(alive cursorTarget) and (cursortarget iskindof 'Land_SatellitePhone_F') and (player distance cursortarget) < 5"],	
 	
 	["<t color='#FFE496'><img image='client\icons\take.paa'/> Hack Base</t>", "addons\BoS\BoS_hackBase.sqf", [cursorTarget], -97, false, false, "", "(alive cursorTarget) and ('MineDetector' in (items player)) and (cursorTarget getVariable ['ownerUID',''] != getPlayerUID player) and (vehicle player == player) and (cursortarget iskindof 'Land_Device_assembled_F') and (player distance cursortarget) < 5"],	
 	
@@ -46,7 +48,7 @@ if (["A3W_vehicleLocking"] call isConfigOn) then
 
 if (["A3W_vehicleLocking"] call isConfigOn) then
 {
-	[player, ["<img image='client\icons\r3f_unlock.paa'/> Pick Lock", "addons\scripts\lockPick.sqf", [cursorTarget], 1, false, false, "", "alive cursorTarget && player distance cursorTarget <= (sizeOf typeOf cursorTarget / 3) max 3 && {{cursorTarget isKindOf _x} count ['LandVehicle','Ship','Air'] > 0 && {locked cursorTarget == 2 && !(cursorTarget getVariable ['A3W_lockpickDisabled',false]) && cursorTarget getVariable ['ownerUID','0'] != getPlayerUID player && 'ToolKit' in items player}}"]] call fn_addManagedAction;
+	// [player, ["<img image='client\icons\r3f_unlock.paa'/> Pick Lock", "addons\scripts\lockPick.sqf", [cursorTarget], 1, false, false, "", "alive cursorTarget && player distance cursorTarget <= (sizeOf typeOf cursorTarget / 3) max 3 && {{cursorTarget isKindOf _x} count ['LandVehicle','Ship','Air'] > 0 && {locked cursorTarget == 2 && !(cursorTarget getVariable ['A3W_lockpickDisabled',false]) && cursorTarget getVariable ['ownerUID','0'] != getPlayerUID player && 'ToolKit' in items player}}"]] call fn_addManagedAction;
 };
 
 // Hehehe...

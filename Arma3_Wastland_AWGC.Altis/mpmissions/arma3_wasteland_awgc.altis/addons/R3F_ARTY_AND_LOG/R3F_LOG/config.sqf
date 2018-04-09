@@ -184,12 +184,13 @@ R3F_LOG_CFG_transporteurs =
 
 R3F_LOG_CFG_objets_transportables =
 [
-	["Land_Device_assembled_F", 10], //Re Locker
-	["Land_Cargo_House_V1_F", 10],  //add
-	["Land_LightHouse_F", 10],  //add
-	["Land_Cargo_HQ_V1_F", 10],  //add
-	["Land_Razorwire_F", 3],  //add
-	["Land_Shed_Small_F", 10],  //add
+	["Land_SatellitePhone_F", 2], // SATCOM
+	["Land_Device_assembled_F", 10], // Re Locker
+	["Land_Cargo_House_V1_F", 10],  // add
+	["Land_LightHouse_F", 10],  // add
+	["Land_Cargo_HQ_V1_F", 10],  // add
+	["Land_Razorwire_F", 3],  // add
+	["Land_Shed_Small_F", 10],  // add
 	["Static_Designator_01_base_F", 2],
 	["Static_Designator_02_base_F", 2],
 	["StaticWeapon", 5],
@@ -252,12 +253,13 @@ R3F_LOG_CFG_objets_transportables =
 
 R3F_LOG_CFG_objets_deplacables =
 [
-	"Land_Device_assembled_F", //relocker
-	"Land_Cargo_House_V1_F",  //add
-	"Land_Cargo_HQ_V1_F",  //add
-	"Land_LightHouse_F",  //add
-	"Land_Razorwire_F",  //add
-	"Land_Shed_Small_F",  //add
+	"Land_SatellitePhone_F", // SATCOM
+	"Land_Device_assembled_F", // relocker
+	"Land_Cargo_House_V1_F",  // add
+	"Land_Cargo_HQ_V1_F",  // add
+	"Land_LightHouse_F",  // add
+	"Land_Razorwire_F",  // add
+	"Land_Shed_Small_F",  // add
 	"StaticWeapon",
 	"ReammoBox_F",
 	"Kart_01_Base_F",
