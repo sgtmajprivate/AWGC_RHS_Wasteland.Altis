@@ -80,7 +80,8 @@
     _x setVariable ['bis_disabled_Door_3',0,true];
   } forEach nearestObjects [player,
     [
-      "Land_Offices_01_V1_F",
+      "Land_Cargo_Tower_V1_F",
+	  "Land_Offices_01_V1_F",
       "Land_i_Shop_02_V3_F",
       "Land_i_Shop_02_V2_F",
       "Land_Dome_Big_F",
