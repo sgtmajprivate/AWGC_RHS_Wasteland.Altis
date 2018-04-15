@@ -49,7 +49,7 @@
 			<English>&lt;t color='#FFFFFF' size='1.5' &gt;* You are in &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt;%3&lt;/t&gt; team.&lt;br/&gt;* You are &lt;t color="#00aa00"&gt;FREE TO ATTACK ANYONE&lt;/t&gt;&lt;br/&gt;* &lt;t color="#FF1111"&gt;NO VOICE IN GLOBAL&lt;/t&gt;&lt;br/&gt;* You can find the Server Rules in the map menu.&lt;br/&gt;* Server restarts are done at the admin's discretion.&lt;/t&gt;</English>
 		</Key>
 		<Key ID="STR_WL_MapMoreInfo">
-			<English>&lt;t color='#FFFFFF' size='1.5' &gt;Note, that the &lt;t color="#FF1111"&gt;MISSIONS ARE HIDDEN!!!&lt;/t&gt;&lt;br/&gt;You will not see mission markers on the map...&lt;br/&gt;Pay close attention to the HINTS that pop up, they include information on mission location.&lt;br/&gt;Also, you must have a GPS to see other team players.&lt;br/&gt;For details on HOW TO PLAY please see the map.&lt;br/&gt;</English>
+			<English>&lt;t color='#FFFFFF' size='1.5' &gt;Note, that the &lt;t color="#FF1111"&gt;MISSIONS ARE HIDDEN!!!&lt;/t&gt;&lt;br/&gt;You will not see mission markers on the map...&lt;br/&gt;Purchase a SATCOM at the General Store to access live Satellite feed and find the missions&lt;br/&gt;Also, you must have a GPS to see other team players.&lt;br/&gt;For details on HOW TO PLAY please see the map.&lt;br/&gt;</English>
 			<!-- &lt;br/&gt;&lt;/t&gt;&lt;t size='1.3'&gt;[Update X]&lt;/t&gt;&lt;br/&gt; -->
 		</Key>
 	</Package>

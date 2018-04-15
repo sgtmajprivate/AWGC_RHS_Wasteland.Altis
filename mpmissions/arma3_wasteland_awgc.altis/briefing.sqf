@@ -13,9 +13,65 @@ _aKeyName = { _arr = actionKeysNamesArray _this; if (count _arr == 0) exitWith {
 
 waitUntil {!isNull player};
 
+player createDiarySubject ["baselocker", "Base Manager"];
+player createDiarySubject ["satcom", "SATCOM"];
 player createDiarySubject ["infos", "HOW TO PLAY"];
 player createDiarySubject ["changelog", "Changelog"];
 player createDiarySubject ["credits", "Credits"];
+
+player createDiaryRecord ["baselocker",
+[
+"Base Manager or Base Locker",
+"
+<br/>Base Manager or Base Locker, This is the main hub of your base. 
+<br/>In order to start base building you will need a Base Locker. 
+<br/>A Base Locker can be purchased at the General Store. 
+<br/>Yes, they are expensive, although you will only need 1, for the entire time you play on our server. 
+<br/>
+<br/>Base Lockers never despawn and cannot be hacked. 
+<br/>The hefty price tag is to minimize over loading of the server, this is also to attract only serious base builders. 
+<br/>We like our FPS :) 
+<br/>
+<br/>Once you have your Base Locker, place it where you would like to build your base. 
+<br/>
+<br/>Now you can start building. 
+<br/>
+<br/>Buildable objects can be purchased in the General Store, once you have the object that you want to build load it up in a vehicle and take it to where you placed your Base Locker. 
+<br/>Set the object near your Base Locker and your done. 
+<br/>
+<br/>Congratulations! 
+<br/>
+<br/>You have just built a base. 
+<br/>
+<br/>To access the base management system, mouse over your Base Locker, and select Base Manager in your player menu. 
+<br/>From here you have a few options. 
+<br/>Play around with it and don't forget to lock the items before you log out, to prevent players from stealing them.
+"
+]];
+
+player createDiaryRecord ["satcom",
+[
+"SATCOM",
+"
+<br/> SATCOM - What is it???
+<br/>
+<br/> As you might have you might have found out by now the missions are hidden. Hence the title of the server [AWGC WastLand Hidden Mission...] 
+<br/>Just to make things clear, this is perfectly normal. We have chosen to hide the missions to add to the realism of our server. 
+<br/>That being said there are a couple ways to find missions. One being the SATCOM. The SATCOM is a live satellite feed that any player can access if in posession of a SATCOM Console. 
+<br/>
+<br/>A SATCOM Console can be purchased at the General Store, under the objects tab. 
+<br/>
+<br/>Once you have a SATCOM Console ie. Sat Phone, all you have to do is mouse over the Sat Phone and select SATCOM in your player menu. 
+<br/>
+<br/>From here you will see the map of ALTIS, click anywhere on the map that you would like to survey and a LIVE satellite feed will popup. 
+<br/>Once in the satellite feed, you can change view options by pressing # keys 1-4. 
+<br/>This gives you various FLIR options. You can move the satellite view around with your W,S,A,D keys or your arrow keys. 
+<br/>
+<br/>To exit the satellite feed press ESC. 
+<br/>
+<br/>SATCOM's can be loaded into vehicles just like any land object or building. 
+"
+]];
 
 player createDiaryRecord ["changelog",
 [
@@ -573,6 +629,10 @@ player createDiaryRecord ["infos",
 "
 <br/><font size='18'>A3Wasteland</font>
 <br/>
+<br/>* Missions are hidden, watch for the hint the pops up when a new mission is spawned.
+<br/>
+<br/>* To help you find the missions, purchase a SATCOM Console. They can be found at the GS under Objects. This will give you access to a live satellite feed.
+<br/>
 <br/>* At the start of the game, spread out and find supplies before worrying about where to establish a meeting place or a base, supplies are important and very valuable.
 <br/>
 <br/>* When picking a base location, it is best advised to pick a place that is out of the way and not so obvious such as airports, cities, map-bound bases, etc. remember, players randomly spawn in and around towns and could even spawn inside your base should you set it up in a town.
@@ -591,12 +651,18 @@ player createDiaryRecord ["infos",
 [
 "About AWGC Wasteland",
 "
-<br/>AWGC Wasteland is a team versus team versus sandbox survival experience. Alot of what we do here at AWGC is to add realism to the Wasteland game mode. The objective of this mission is to rally your faction, scavenge supplies, weapons, and vehicles, and destroy the other factions. It is large scale battle at its best!
+<br/>AWGC Wasteland is a team versus team versus sandbox Mil-Sim experience. Alot of what we do here at AWGC is to add realism to the Wasteland game mode. The objective of this mission is to rally your faction, scavenge supplies, weapons, and vehicles, and destroy the other factions. It is large scale battle at its best!
 <br/>
 <br/>FAQ:
 <br/>
 <br/>Q. Where are the mission markers?
 <br/>A. Missions markers are hidden in this server. That does not mean there are no active missions, at any given time there will be at least 5 active missions. Wait for the hints to pop up, they include intel on where to find the mission.
+<br/>
+<br/>Q. What is a SATCOM Console, and how do I use it?
+<br/>A. The SATCOM Console can be purchased at the General Store, It provides the player with a live satellite feed of Altis. To you the SATCOM mouse over the object and select SATCOM in the player menu. From here you can move the satellite POV with the arrow keys, and change FLIR options with # Keys 1-4. Hit ESC the exit SAT feed. 
+<br/>
+<br/>Q. How can I earn money?
+<br/>A. In AWGC WasteLand Altis, there are plenty of ways to make money. By far the fastest way to earn money would be to capture the territory zones located around the airfield. (There are 7 capture points) When captured, each zone pays $10,000 every 15 minutes. Missions also yeald high value, either dropped or from items siezed and sold.
 <br/>
 <br/>Q. Why can't I see other team players on the map?
 <br/>A. By default, you do not spawn with a GPS. A GPS is required to see other teamates. They can easily be looted or purchase at the GS, General Store. Again this feature is for added realism, and it makes players use thier navigation skills. A lost art in ARMA...
