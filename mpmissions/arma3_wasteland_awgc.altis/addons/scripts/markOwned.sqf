@@ -5,7 +5,7 @@
 
 #define RADIUS 1000
 _maxLifetime = ["A3W_objectLifetime", 168] call getPublicVar;
-_objects = nearestObjects [position player, ["Landvehicle", "Ship", "Air", "Building", "ReammoBox_F", "thingX"], 10000];
+_objects = nearestObjects [position player, ["Landvehicle", "Ship", "Air", "Building", "ReammoBox_F", "thingX"], 1000];
 
 
 if (isNil "ownedObjectMapMarkers") then {
