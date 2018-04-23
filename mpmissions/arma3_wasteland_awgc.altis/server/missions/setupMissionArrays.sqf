@@ -9,7 +9,7 @@ if (!isServer) exitWith {};
 MainMissions =
 [
 	// Mission filename, weight
-	["mission_ArmedDiversquad", 0],
+	["mission_ArmedDiversquad", 1],
 	["mission_Coastal_Convoy", 1],
 	["mission_Convoy", 1],
 	["mission_HostileHeliFormation", 0.5],
@@ -32,10 +32,8 @@ SideMissions =
 
 MoneyMissions =
 [
-	["mission_MoneyShipment01", 1],
-	["mission_MoneyShipment02", 1],
-	["mission_MoneyShipment03", 1],
-	["mission_SunkenTreasure", 0]
+	["mission_MoneyShipment", 1],
+	["mission_SunkenTreasure", 1]
 ];
 
 MissionSpawnMarkers = (allMapMarkers select {["Mission_", _x] call fn_startsWith}) apply {[_x, false]};
@@ -50,10 +48,8 @@ if !(ForestMissionMarkers isEqualTo []) then
 		["mission_WepCache", 3]
 	];
 };
-LandConvoyPath03 = (call compile preprocessFileLineNumbers "mapConfig\convoys\landConvoysList03.sqf") apply {[_x, false]};
-LandConvoyPath02 = (call compile preprocessFileLineNumbers "mapConfig\convoys\landConvoysList02.sqf") apply {[_x, false]};
-LandConvoyPath01 = (call compile preprocessFileLineNumbers "mapConfig\convoys\landConvoysList01.sqf") apply {[_x, false]};
-LandConvoyPaths = (call compile preprocessFileLineNumbers "mapConfig\convoys\landConvoysList.sqf") apply {[_x, false]};			//  Used for random select convoy path
+
+LandConvoyPaths = (call compile preprocessFileLineNumbers "mapConfig\convoys\landConvoysList.sqf") apply {[_x, false]};
 CoastalConvoyPaths = (call compile preprocessFileLineNumbers "mapConfig\convoys\coastalConvoysList.sqf") apply {[_x, false]};
 
 MainMissions = [MainMissions, [["A3W_heliPatrolMissions", ["mission_Coastal_Convoy", "mission_HostileHeliFormation"]], ["A3W_underWaterMissions", ["mission_ArmedDiversquad"]]]] call removeDisabledMissions;

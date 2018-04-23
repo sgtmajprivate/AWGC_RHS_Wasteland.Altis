@@ -24,7 +24,7 @@ else
 _isSniper = (["_sniper_", _unit] call fn_findString != -1);
 _isDiver = (["_diver_", _unit] call fn_findString != -1);
 
-_defaultVest = "V_Rangemaster_Belt";
+_defaultVest = "rhsgref_alice_webbing";
 
 _result = "";
 
@@ -47,12 +47,12 @@ switch (_side) do
 			};
 			default
 			{
-				if (_item == "uniform") then { _result = "U_B_CombatUniform_mcam" };
+				if (_item == "uniform") then { _result = "rhs_uniform_cu_ocp" };
 				if (_item == "vest") then { _result = _defaultVest };
 			};
 		};
 
-		if (_item == "headgear") then { _result = "H_MilCap_mcamo" };
+		if (_item == "headgear") then { _result = "rhs_Booniehat_ocp" };
 	};
 	case OPFOR:
 	{
@@ -71,12 +71,12 @@ switch (_side) do
 			};
 			default
 			{
-				if (_item == "uniform") then { _result = "U_O_OfficerUniform_ocamo" };
+				if (_item == "uniform") then { _result = "rhs_uniform_flora_patchless_alt" };
 				if (_item == "vest") then { _result = _defaultVest };
 			};
 		};
 
-		if (_item == "headgear") then { _result = "H_MilCap_ocamo" };
+		if (_item == "headgear") then { _result = "rhs_beanie_green" };
 	};
 	default
 	{
@@ -95,12 +95,12 @@ switch (_side) do
 			};
 			default
 			{
-				if (_item == "uniform") then { _result = "U_I_CombatUniform" };
+				if (_item == "uniform") then { _result = "rhsgref_uniform_specter" };
 				if (_item == "vest") then { _result = _defaultVest };
 			};
 		};
 
-		if (_item == "headgear") then { _result = "H_MilCap_dgtl" };
+		if (_item == "headgear") then { _result = "rhsgref_patrolcap_specter" };
 	};
 };
 

@@ -21,7 +21,7 @@ if !(_unit isUniformAllowed _uniform) then
 {
 	_uniforms =
 	[
-		["U_B_CombatUniform_mcam", "U_O_OfficerUniform_ocamo", "U_O_CombatUniform_ocamo", "U_I_CombatUniform"], // opfor officer uniform takes precedence on combat uniform to maintain balance
+		["rhs_uniform_cu_ocp", "rhs_Booniehat_ocp", "rhs_uniform_flora_patchless_alt", "rhs_beanie_green", "rhsgref_uniform_specter", "rhsgref_patrolcap_specter", "U_B_CombatUniform_mcam", "U_O_OfficerUniform_ocamo", "U_O_CombatUniform_ocamo", "U_I_CombatUniform"], // opfor officer uniform takes precedence on combat uniform to maintain balance
 
 		["U_B_T_Soldier_F", "U_O_T_Officer_F", "U_O_T_Soldier_F", "U_I_CombatUniform"], // jungle fatigues converts to default uniform for indies
 
