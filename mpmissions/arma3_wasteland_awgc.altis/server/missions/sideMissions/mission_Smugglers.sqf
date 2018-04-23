@@ -93,7 +93,7 @@ _successExec =
 	
 	//Random fake - real money
 	_cashrandomizera = ["money","cmoney","money","cmoney"];
-	_cashamountrandomizera = [1000,1500,2000,2500,3000,3500,4000,4500,5000];
+	_cashamountrandomizera = [10000,15000,20000,25000,30000,35000,40000,45000,50000];
 	_cashpilerandomizera = [3,5];
 		
 	_casha = _cashrandomizera call BIS_fnc_SelectRandom;

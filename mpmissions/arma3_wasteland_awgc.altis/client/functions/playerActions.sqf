@@ -29,7 +29,7 @@ if (["A3W_vehicleLocking"] call isConfigOn) then
 // SATCOM	
 	["<t color='#FFE496'><img image='client\icons\satellite.paa'/> SATCOM</t>", "pxs_satcom_a3\start_satellite.sqf", [cursorTarget], -97, false, false, "", "(alive cursorTarget) and (cursortarget iskindof 'Land_SatellitePhone_F') and (player distance cursortarget) < 5"],	
 	
-	["<t color='#FFE496'><img image='client\icons\take.paa'/> Hack Base</t>", "addons\BoS\BoS_hackBase.sqf", [cursorTarget], -97, false, false, "", "(alive cursorTarget) and ('MineDetector' in (items player)) and (cursorTarget getVariable ['ownerUID',''] != getPlayerUID player) and (vehicle player == player) and (cursortarget iskindof 'Land_Device_assembled_F') and (player distance cursortarget) < 5"],	
+	// ["<t color='#FFE496'><img image='client\icons\take.paa'/> Hack Base</t>", "addons\BoS\BoS_hackBase.sqf", [cursorTarget], -97, false, false, "", "(alive cursorTarget) and ('MineDetector' in (items player)) and (cursorTarget getVariable ['ownerUID',''] != getPlayerUID player) and (vehicle player == player) and (cursortarget iskindof 'Land_Device_assembled_F') and (player distance cursortarget) < 5"],	
 	
 	// If you have a custom vehicle licence system, simply remove/comment the following action
 	["<img image='client\icons\r3f_unlock.paa'/> Acquire Vehicle Ownership", "client\actions\takeOwnership.sqf", [], 1, false, false, "", "[] call fn_canTakeOwnership isEqualTo ''"],

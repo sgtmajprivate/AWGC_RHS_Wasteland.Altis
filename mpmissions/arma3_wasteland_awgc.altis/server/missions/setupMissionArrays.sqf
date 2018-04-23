@@ -22,16 +22,22 @@ MainMissions =
 
 SideMissions =
 [
+	["mission_Roadblock", 1],
+	["mission_Sniper", 1],
+	["mission_drugsRunners", 1],
+	["mission_Smugglers", 1],
 	["mission_HostileHelicopter", 0.5],
 	["mission_MiniConvoy", 1],
-	["mission_SunkenSupplies", 1],
+	["mission_SunkenSupplies", 0],
 	["mission_TownInvasion", 2],
-	["mission_Outpost", 3],
+	["mission_Outpost", 2],
 	["mission_Truck", 1]
 ];
 
 MoneyMissions =
 [
+	["mission_altisPatrol", 1],
+	["mission_militaryPatrol", 1],
 	["mission_MoneyShipment", 1],
 	["mission_SunkenTreasure", 1]
 ];
@@ -59,3 +65,44 @@ MoneyMissions = [MoneyMissions, [["A3W_underWaterMissions", ["mission_SunkenTrea
 { _x set [2, false] } forEach MainMissions;
 { _x set [2, false] } forEach SideMissions;
 { _x set [2, false] } forEach MoneyMissions;
+
+MissionSpawnMarkers = [];
+SunkenMissionMarkers = [];
+RoadblockMissionMarkers =[];
+SniperMissionMarkers =[];
+{
+	switch (true) do
+	{
+		case (["Mission_", _x] call fn_startsWith):
+		{
+			MissionSpawnMarkers pushBack [_x, false];
+		};
+		case (["SunkenMission_", _x] call fn_startsWith):
+		{
+			SunkenMissionMarkers pushBack [_x, false];
+		};
+		case (["RoadBlock_", _x] call fn_startsWith):
+		{
+			RoadblockMissionMarkers pushBack [_x, false];
+		};
+		case (["Sniper_", _x] call fn_startsWith):
+		{
+			SniperMissionMarkers pushBack [_x, false];
+		};
+	};
+} forEach allMapMarkers;
+
+LandConvoyPaths = [];
+{
+	LandConvoyPaths pushBack [_x, false];
+} forEach (call compile preprocessFileLineNumbers "mapConfig\convoys\landConvoysList.sqf");
+
+CoastalConvoyPaths = [];
+{
+	CoastalConvoyPaths pushBack [_x, false];
+} forEach (call compile preprocessFileLineNumbers "mapConfig\convoys\coastalConvoysList.sqf");
+
+PatrolConvoyPaths = [];
+{
+	PatrolConvoyPaths pushBack [_x, false];
+} forEach (call compile preprocessFileLineNumbers "mapConfig\convoys\patrolConvoysList.sqf");
