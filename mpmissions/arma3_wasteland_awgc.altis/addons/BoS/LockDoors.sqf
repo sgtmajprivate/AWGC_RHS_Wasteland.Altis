@@ -9,8 +9,7 @@
   _x setVariable ['bis_disabled_Door_1',1,true];
 } forEach nearestObjects [player,
   [
-    "Land_LightHouse_F",		// add
-	"Land_BarGate_F",  		// add
+    "Land_BarGate_F",  //add
 	"Land_LightHouse_F",
 	"Land_Cargo_House_V3_F",
     "Land_Cargo_House_V1_F",
@@ -45,8 +44,7 @@
   _x setVariable ['bis_disabled_Door_2',1,true];
 } forEach nearestObjects [player,
   [
-  "Land_Airport_Tower_F",  		// add
-  "Land_Cargo_Patrol_V1_F",		// add
+  "Land_Airport_Tower_F",  //add
   "Land_i_House_Small_03_V1_F",
   "Land_i_House_Big_01_V3_F",
   "Land_i_House_Big_01_V2_F",
@@ -82,8 +80,7 @@
     _x setVariable ['bis_disabled_Door_3',1,true];
   } forEach nearestObjects [player,
     [
-      "Land_Cargo_Tower_V1_F", 		// add
-	  "Land_Offices_01_V1_F",
+      "Land_Offices_01_V1_F",
       "Land_i_Shop_02_V3_F",
       "Land_i_Shop_02_V2_F",
       "Land_Dome_Big_F",
@@ -114,7 +111,7 @@
     _x setVariable ['bis_disabled_Door_4',1,true];
   } forEach nearestObjects [player,
     [
-	  "Land_i_House_Big_02_V3_F",
+      "Land_i_House_Big_02_V3_F",
       "Land_i_House_Big_02_V1_F",
       "Land_i_House_Big_02_V2_F",
       "Land_i_Shop_01_V3_F",

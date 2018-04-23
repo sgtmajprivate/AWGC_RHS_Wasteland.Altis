@@ -7,7 +7,7 @@
 if (!isServer) exitwith {};
 
 #define MISSION_LOCATION_COOLDOWN (10*60)
-#define MISSION_TIMER_EXTENSION (30*60)
+#define MISSION_TIMER_EXTENSION (60*60)
 
 private ["_controllerSuffix", "_missionTimeout", "_availableLocations", "_missionLocation", "_leader", "_marker", "_failed", "_complete", "_startTime", "_oldAiCount", "_leaderTemp", "_newAiCount", "_adjustTime", "_lastPos", "_floorHeight"];
 
